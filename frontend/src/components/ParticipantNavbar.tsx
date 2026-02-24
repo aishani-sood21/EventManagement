@@ -26,7 +26,7 @@ const ParticipantNavbar: React.FC = () => {
       <div className="participant-navbar-container">
         <div className="participant-navbar-brand">
           <Link to="/dashboard" className="participant-navbar-logo">
-            EventHub
+            Eventure
           </Link>
           <span className="participant-navbar-role">Participant</span>
         </div>
@@ -53,7 +53,7 @@ const ParticipantNavbar: React.FC = () => {
               className={`participant-navbar-link ${isActive('/my-events') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="participant-navbar-icon">🎫</span>
+              <span className="participant-navbar-icon"></span>
               My Events
             </Link>
           </li>
@@ -64,7 +64,7 @@ const ParticipantNavbar: React.FC = () => {
               className={`participant-navbar-link ${isActive('/browse') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="participant-navbar-icon">🔍</span>
+              <span className="participant-navbar-icon"></span>
               Browse Events
             </Link>
           </li>

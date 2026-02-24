@@ -33,7 +33,7 @@ export default function Navbar({ user }: NavbarProps) {
           {/* Logo/Brand */}
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-indigo-600 cursor-pointer" onClick={() => navigate('/dashboard')}>
-              🎉 Felicity
+              Felicity
             </h1>
           </div>
 
@@ -49,7 +49,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  🏠 Dashboard
+                  Dashboard
                 </button>
                 <button 
                   onClick={() => navigate('/browse-events')}
@@ -59,7 +59,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  🎫 Browse Events
+                  Browse Events
                 </button>
                 <button 
                   onClick={() => navigate('/clubs')}
@@ -69,7 +69,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  🏢 Clubs/Organizers
+                  Clubs/Organizers
                 </button>
                 <button 
                   onClick={() => navigate('/my-events')}
@@ -79,7 +79,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  📋 My Events
+                  My Events
                 </button>
                 <button 
                   onClick={() => navigate('/profile')}
@@ -89,7 +89,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  👤 Profile
+                  Profile
                 </button>
               </>
             )}
@@ -104,7 +104,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  🏠 Dashboard
+                  Dashboard
                 </button>
                 <button 
                   onClick={() => navigate('/organizer-events')}
@@ -114,7 +114,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  📋 My Events
+                  My Events
                 </button>
                 <button 
                   onClick={() => navigate('/profile')}
@@ -124,7 +124,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  👤 Profile
+                  Profile
                 </button>
               </>
             )}
@@ -139,7 +139,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  🏠 Dashboard
+                  Dashboard
                 </button>
                 <button 
                   onClick={() => navigate('/admin')}
@@ -149,7 +149,7 @@ export default function Navbar({ user }: NavbarProps) {
                       : 'text-gray-700 hover:text-indigo-600'
                   }`}
                 >
-                  ⚙️ Admin Panel
+                  Admin Panel
                 </button>
               </>
             )}
