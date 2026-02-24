@@ -48,6 +48,11 @@ app.use('/api/security', securityRoutes);
 // Note: If you don't have MongoDB installed locally, this might fail unless you use a cloud string.
 const MONGO_URI = process.env.MONGO_URI as string;
 
+app.use(cors({
+  origin: ["https://event-management-beige-eta.vercel.app", "http://localhost:5173"],
+  credentials: true
+}));
+
 mongoose.connect(MONGO_URI)
   .then(async () => {
     console.log('✅ Connected to MongoDB');
@@ -71,3 +76,4 @@ mongoose.connect(MONGO_URI)
   .catch((err) => {
     console.error('❌ MongoDB Connection Error:', err);
   });
+
