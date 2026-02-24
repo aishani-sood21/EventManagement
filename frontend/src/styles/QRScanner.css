@@ -1,0 +1,272 @@
+/* QR Scanner Styles */
+.qr-scanner-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scanner-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.scanner-header h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.scanner-header .text-muted {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Method Selector */
+.method-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-method {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 0.75rem;
+  border: 2px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-method i {
+  font-size: 2.5rem;
+}
+
+.btn-camera {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.btn-camera:hover {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  color: white;
+  border-color: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3);
+}
+
+.btn-upload {
+  border-color: #10b981;
+  color: #10b981;
+}
+
+.btn-upload:hover {
+  background: linear-gradient(to right, #10b981, #059669);
+  color: white;
+  border-color: #10b981;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+}
+
+.divider {
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Camera Scanner */
+.scanner-camera {
+  text-align: center;
+}
+
+#qr-reader {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.btn-stop {
+  width: 100%;
+  padding: 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-stop:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.3);
+}
+
+/* Scan Result */
+.scan-result {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  animation: slideIn 0.3s ease;
+}
+
+.scan-result.success {
+  background: linear-gradient(to bottom right, #d1fae5, #a7f3d0);
+  border: 2px solid #10b981;
+}
+
+.scan-result.error {
+  background: linear-gradient(to bottom right, #fee2e2, #fecaca);
+  border: 2px solid #ef4444;
+}
+
+.result-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: bounce 0.5s ease;
+}
+
+.scan-result h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.result-details {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.result-details p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+.result-details strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #991b1b;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.btn-scan-another {
+  margin-top: 1rem;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-scan-another:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4);
+}
+
+/* Alert */
+.alert {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.alert-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .qr-scanner-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .scanner-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-method {
+    padding: 1.25rem 1.5rem;
+  }
+
+  .btn-method i {
+    font-size: 2rem;
+  }
+
+  .result-icon {
+    font-size: 3rem;
+  }
+}

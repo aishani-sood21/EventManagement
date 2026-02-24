@@ -1,0 +1,15 @@
+/* Admin Navbar Styles - Uses Participant Navbar structure with Admin theme */
+
+/* Import participant navbar styles as base */
+@import './ParticipantNavbar.css';
+
+/* Admin-specific color overrides */
+.admin-variant {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%) !important;
+}
+
+.admin-role {
+  background: rgba(255, 255, 255, 0.25) !important;
+  font-weight: 600 !important;
+}
+
