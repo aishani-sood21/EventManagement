@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5050/api',
+  // baseURL: 'http://localhost:5050/api', <--- Old Local URL
+  baseURL: 'https://a1-backend-ztym.onrender.com/api', // <--- New Live URL
 });
 
 // Add token to every request if it exists
