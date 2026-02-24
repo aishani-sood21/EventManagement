@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
   // baseURL: 'http://localhost:5050/api', <--- Old Local URL
-  baseURL: 'https://a1-backend-ztym.onrender.com/api', // <--- New Live URL
+  baseURL: import.meta.env.VITE_API_URL, // <--- New Live URL
 });
 
 // Add token to every request if it exists

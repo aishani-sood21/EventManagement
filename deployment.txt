@@ -1,0 +1,10 @@
+Project: Event Management System (202512345)
+
+1. Frontend Production URL (Vercel): 
+   https://event-management-beige-eta.vercel.app/auth
+
+2. Backend Base API URL (Render): 
+   https://a1-backend-ztym.onrender.com
+
+3. Database: 
+   MongoDB Atlas (Connection managed via MONGO_URI environment variable)
