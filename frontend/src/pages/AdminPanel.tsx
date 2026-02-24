@@ -92,14 +92,14 @@ export default function AdminPanel() {
         {activeTab === 'dashboard' && stats && (
           <div className="admin-dashboard">
             <div className="admin-dashboard-header">
-              <h2 className="admin-dashboard-title">📊 System Overview</h2>
+              <h2 className="admin-dashboard-title">System Overview</h2>
               <p className="admin-dashboard-subtitle">Monitor your event management system</p>
             </div>
 
             {/* Stats Grid */}
             <div className="admin-stats-grid">
               <div className="admin-stat-card organizers">
-                <div className="admin-stat-icon">🏢</div>
+                <div className="admin-stat-icon"></div>
                 <div className="admin-stat-content">
                   <p className="admin-stat-label">Total Organizers</p>
                   <p className="admin-stat-value">{stats.organizers.total}</p>
@@ -112,7 +112,7 @@ export default function AdminPanel() {
               </div>
               
               <div className="admin-stat-card participants">
-                <div className="admin-stat-icon">👥</div>
+                <div className="admin-stat-icon"></div>
                 <div className="admin-stat-content">
                   <p className="admin-stat-label">Total Participants</p>
                   <p className="admin-stat-value">{stats.participants}</p>
@@ -120,7 +120,7 @@ export default function AdminPanel() {
               </div>
               
               <div className="admin-stat-card events">
-                <div className="admin-stat-icon">🎯</div>
+                <div className="admin-stat-icon"></div>
                 <div className="admin-stat-content">
                   <p className="admin-stat-label">Total Events</p>
                   <p className="admin-stat-value">{stats.events.total}</p>
@@ -133,7 +133,7 @@ export default function AdminPanel() {
               </div>
               
               <div className="admin-stat-card revenue">
-                <div className="admin-stat-icon">💰</div>
+                <div className="admin-stat-icon"></div>
                 <div className="admin-stat-content">
                   <p className="admin-stat-label">Total Revenue</p>
                   <p className="admin-stat-value">₹{stats.revenue}</p>
@@ -144,13 +144,13 @@ export default function AdminPanel() {
 
             {/* Quick Actions */}
             <div className="admin-quick-actions">
-              <h3 className="admin-section-title">⚡ Quick Actions</h3>
+              <h3 className="admin-section-title">Quick Actions</h3>
               <div className="admin-actions-grid">
                 <button
                   onClick={() => setActiveTab('manage')}
                   className="admin-action-card"
                 >
-                  <div className="admin-action-icon">🏢</div>
+                  <div className="admin-action-icon"></div>
                   <div className="admin-action-content">
                     <h4 className="admin-action-title">Manage Organizers</h4>
                     <p className="admin-action-desc">Add, disable, or manage clubs</p>
@@ -163,7 +163,7 @@ export default function AdminPanel() {
                   }}
                   className="admin-action-card"
                 >
-                  <div className="admin-action-icon">➕</div>
+                  <div className="admin-action-icon"></div>
                   <div className="admin-action-content">
                     <h4 className="admin-action-title">Add New Organizer</h4>
                     <p className="admin-action-desc">Create a new club/organizer account</p>
@@ -173,7 +173,7 @@ export default function AdminPanel() {
                   onClick={() => setActiveTab('password-resets')}
                   className="admin-action-card"
                 >
-                  <div className="admin-action-icon">🔑</div>
+                  <div className="admin-action-icon"></div>
                   <div className="admin-action-content">
                     <h4 className="admin-action-title">Password Resets</h4>
                     <p className="admin-action-desc">View pending reset requests</p>
@@ -183,7 +183,7 @@ export default function AdminPanel() {
                   onClick={() => setActiveTab('security')}
                   className="admin-action-card"
                 >
-                  <div className="admin-action-icon">🔒</div>
+                  <div className="admin-action-icon"></div>
                   <div className="admin-action-content">
                     <h4 className="admin-action-title">Security & Bot Protection</h4>
                     <p className="admin-action-desc">Monitor security events and blocked IPs</p>
@@ -204,7 +204,7 @@ export default function AdminPanel() {
           <div className="admin-manage-section">
             <div className="admin-manage-header">
               <div>
-                <h2 className="admin-section-title">🏢 Club/Organizer Management</h2>
+                <h2 className="admin-section-title">Club/Organizer Management</h2>
                 <p className="admin-section-subtitle">Manage all clubs and organizers in the system</p>
               </div>
               <button
@@ -318,10 +318,10 @@ export default function AdminPanel() {
         {/* Password Reset Requests Tab */}
         {activeTab === 'password-resets' && (
           <div className="admin-password-resets">
-            <h2 className="admin-section-title">🔑 Password Reset Requests</h2>
+            <h2 className="admin-section-title">Password Reset Requests</h2>
             
             <div className="admin-info-box">
-              <div className="admin-info-icon">ℹ️</div>
+              <div className="admin-info-icon"></div>
               <div className="admin-info-content">
                 <h3 className="admin-info-title">About Password Resets</h3>
                 <p className="admin-info-text">
@@ -336,7 +336,7 @@ export default function AdminPanel() {
             </div>
 
             <div className="admin-empty-state-large">
-              <div className="admin-empty-icon">🔐</div>
+              <div className="admin-empty-icon"></div>
               <h3 className="admin-empty-title">No Pending Requests</h3>
               <p className="admin-empty-text">
                 There are currently no password reset requests requiring your attention.
@@ -412,7 +412,7 @@ function CreateOrganizerModal({ onClose, onSuccess }: any) {
     <div className="admin-modal-overlay">
       <div className="admin-modal">
         <div className="admin-modal-header">
-          <h2 className="admin-modal-title">➕ Add New Club/Organizer</h2>
+          <h2 className="admin-modal-title">Add New Club/Organizer</h2>
           <p className="admin-modal-subtitle">
             System will auto-generate credentials with @iiit.ac.in email
           </p>
@@ -483,7 +483,7 @@ function CreateOrganizerModal({ onClose, onSuccess }: any) {
 
           {error && (
             <div className="admin-error-box">
-              <span className="admin-error-icon">⚠️</span>
+              <span className="admin-error-icon"></span>
               <span className="admin-error-text">{error}</span>
             </div>
           )}
@@ -509,7 +509,7 @@ function CreateOrganizerModal({ onClose, onSuccess }: any) {
                 </>
               ) : (
                 <>
-                  <span>✨</span>
+                  <span></span>
                   Create Organizer
                 </>
               )}
@@ -519,7 +519,7 @@ function CreateOrganizerModal({ onClose, onSuccess }: any) {
 
         <div className="admin-modal-footer">
           <div className="admin-info-badge">
-            <span className="admin-info-icon">🔐</span>
+            <span className="admin-info-icon"></span>
             <span className="admin-info-text">
               Login credentials will be auto-generated and displayed after creation
             </span>
@@ -546,7 +546,7 @@ function CredentialsModal({ credentials, onClose }: any) {
       <div className="admin-modal credentials-modal">
         <div className="admin-modal-header success">
           <div className="success-icon-wrapper">
-            <span className="success-icon">✅</span>
+            <span className="success-icon"></span>
           </div>
           <h2 className="admin-modal-title">Organizer Created Successfully!</h2>
           <p className="admin-modal-subtitle">
@@ -556,7 +556,7 @@ function CredentialsModal({ credentials, onClose }: any) {
         
         <div className="credentials-warning">
           <div className="credentials-warning-header">
-            <span className="warning-icon">⚠️</span>
+            <span className="warning-icon"></span>
             <span className="warning-title">IMPORTANT - Save These Credentials!</span>
           </div>
           <p className="credentials-warning-text">
@@ -567,7 +567,7 @@ function CredentialsModal({ credentials, onClose }: any) {
         <div className="credentials-container">
           <div className="credentials-box">
             <div className="credentials-label">
-              <span className="credential-icon">📧</span>
+              <span className="credential-icon"></span>
               <span>Login Email</span>
             </div>
             <div className="credentials-value">{credentials.email}</div>
@@ -575,7 +575,7 @@ function CredentialsModal({ credentials, onClose }: any) {
           
           <div className="credentials-box">
             <div className="credentials-label">
-              <span className="credential-icon">🔑</span>
+              <span className="credential-icon"></span>
               <span>Password</span>
             </div>
             <div className="credentials-value password">{credentials.password}</div>
@@ -583,7 +583,7 @@ function CredentialsModal({ credentials, onClose }: any) {
         </div>
 
         <div className="credentials-info">
-          <div className="credentials-info-icon">ℹ️</div>
+          <div className="credentials-info-icon"></div>
           <div className="credentials-info-text">
             <p>The organizer can login immediately with these credentials.</p>
             <p>Recommend they change their password after first login.</p>

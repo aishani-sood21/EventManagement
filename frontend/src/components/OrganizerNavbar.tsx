@@ -27,7 +27,7 @@ const OrganizerNavbar: React.FC = () => {
       <div className="organizer-navbar-container">
         <div className="organizer-navbar-brand">
           <Link to="/dashboard" className="organizer-navbar-logo">
-            🎉 EventHub
+            EventHub
           </Link>
           <span className="organizer-navbar-role">Organizer</span>
         </div>
@@ -43,7 +43,7 @@ const OrganizerNavbar: React.FC = () => {
               className={`organizer-navbar-link ${isActive('/dashboard') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="organizer-navbar-icon">🏠</span>
+              <span className="organizer-navbar-icon"></span>
               Dashboard
             </Link>
           </li>
@@ -54,7 +54,7 @@ const OrganizerNavbar: React.FC = () => {
               className={`organizer-navbar-link ${isActive('/create-event') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="organizer-navbar-icon">➕</span>
+              <span className="organizer-navbar-icon"></span>
               Create Event
             </Link>
           </li>
@@ -65,7 +65,7 @@ const OrganizerNavbar: React.FC = () => {
               className={`organizer-navbar-link ${isActive('/organizer/events') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="organizer-navbar-icon">📋</span>
+              <span className="organizer-navbar-icon"></span>
               Ongoing Events
             </Link>
           </li>
@@ -76,7 +76,7 @@ const OrganizerNavbar: React.FC = () => {
               className={`organizer-navbar-link ${isActive('/profile') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="organizer-navbar-icon">👤</span>
+              <span className="organizer-navbar-icon"></span>
               Profile
             </Link>
           </li>
@@ -89,7 +89,7 @@ const OrganizerNavbar: React.FC = () => {
                 handleLogout();
               }}
             >
-              <span className="organizer-navbar-icon">🚪</span>
+              <span className="organizer-navbar-icon"></span>
               Logout
             </button>
           </li>

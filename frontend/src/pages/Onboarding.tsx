@@ -64,7 +64,7 @@ export default function Onboarding() {
     <div className="onboarding-page">
       <div className="onboarding-card">
         <div className="onboarding-header">
-          <div className="onboarding-emoji">🎉</div>
+          <div className="onboarding-emoji"></div>
           <h1 className="onboarding-title">Welcome to Felicity!</h1>
           <p className="onboarding-subtitle">
             Help us personalize your experience by setting your preferences
@@ -74,7 +74,7 @@ export default function Onboarding() {
         {/* Areas of Interest */}
         <div className="onboarding-section">
           <div className="section-header">
-            <span className="section-icon">📚</span>
+            <span className="section-icon"></span>
             <h2 className="section-title">Areas of Interest</h2>
           </div>
           <p className="section-subtitle">
@@ -103,7 +103,7 @@ export default function Onboarding() {
         {/* Follow Organizers */}
         <div className="onboarding-section">
           <div className="section-header">
-            <span className="section-icon">👥</span>
+            <span className="section-icon"></span>
             <h2 className="section-title">Follow Clubs & Organizers</h2>
           </div>
           <p className="section-subtitle">

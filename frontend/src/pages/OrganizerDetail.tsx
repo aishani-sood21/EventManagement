@@ -116,7 +116,7 @@ export default function OrganizerDetail() {
           
           {organizer.profile?.contactEmail && (
             <p className="organizer-contact">
-              <span>📧 Contact:</span>
+              <span>Contact:</span>
               <a 
                 href={`mailto:${organizer.profile.contactEmail}`} 
                 className="organizer-contact-link"
@@ -146,14 +146,14 @@ export default function OrganizerDetail() {
         {/* Upcoming Events */}
         <div className="events-section">
           <div className="events-section-header">
-            <h3 className="events-section-title">📅 Upcoming Events</h3>
+            <h3 className="events-section-title">Upcoming Events</h3>
             {upcomingEvents.length > 0 && (
               <span className="events-section-count">{upcomingEvents.length}</span>
             )}
           </div>
           {upcomingEvents.length === 0 ? (
             <div className="events-empty-state">
-              <div className="events-empty-icon">📅</div>
+              <div className="events-empty-icon"></div>
               <p className="events-empty-text">No upcoming events scheduled.</p>
             </div>
           ) : (
@@ -164,7 +164,6 @@ export default function OrganizerDetail() {
                     <h4 className="event-card-title">{event.title}</h4>
                     <p className="event-card-description">{event.description}</p>
                     <p className="event-card-date">
-                      <span>📅</span>
                       <span>
                         {new Date(event.startDateTime).toLocaleDateString()} at{' '}
                         {new Date(event.startDateTime).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
@@ -186,14 +185,14 @@ export default function OrganizerDetail() {
         {/* Past Events */}
         <div className="events-section">
           <div className="events-section-header">
-            <h3 className="events-section-title">🕒 Past Events</h3>
+            <h3 className="events-section-title">Past Events</h3>
             {pastEvents.length > 0 && (
               <span className="events-section-count">{pastEvents.length}</span>
             )}
           </div>
           {pastEvents.length === 0 ? (
             <div className="events-empty-state">
-              <div className="events-empty-icon">🕒</div>
+              <div className="events-empty-icon"></div>
               <p className="events-empty-text">No past events.</p>
             </div>
           ) : (
@@ -204,7 +203,6 @@ export default function OrganizerDetail() {
                     <h4 className="event-card-title">{event.title}</h4>
                     <p className="event-card-description">{event.description}</p>
                     <p className="event-card-date">
-                      <span>📅</span>
                       <span>
                         {new Date(event.startDateTime).toLocaleDateString()}
                       </span>

@@ -47,7 +47,7 @@ export default function OrganizerEvents() {
         <div className="organizer-events-header-content">
           <div className="organizer-events-title-section">
             <h1 className="organizer-events-title">
-              <span>🎯</span>
+              <span></span>
               <span>My Events</span>
             </h1>
             <p className="organizer-events-subtitle">
@@ -76,7 +76,7 @@ export default function OrganizerEvents() {
       <div className="organizer-events-content">
         {events.length === 0 ? (
           <div className="organizer-events-empty">
-            <div className="organizer-events-empty-icon">🎪</div>
+            <div className="organizer-events-empty-icon"></div>
             <h2 className="organizer-events-empty-title">No Events Yet</h2>
             <p className="organizer-events-empty-text">
               Start creating amazing events and engage with your participants!

@@ -60,7 +60,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ activeTab = 'dashboard', onTa
               className={`participant-navbar-link ${activeTab === 'dashboard' ? 'active' : ''}`}
               onClick={() => handleTabClick('dashboard')}
             >
-              <span className="participant-navbar-icon">🏠</span>
+              <span className="participant-navbar-icon"></span>
               Dashboard
             </button>
           </li>
@@ -70,7 +70,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ activeTab = 'dashboard', onTa
               className={`participant-navbar-link ${activeTab === 'manage' ? 'active' : ''}`}
               onClick={() => handleTabClick('manage')}
             >
-              <span className="participant-navbar-icon">🏢</span>
+              <span className="participant-navbar-icon"></span>
               Manage Clubs/Organizers
             </button>
           </li>
@@ -80,7 +80,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ activeTab = 'dashboard', onTa
               className={`participant-navbar-link ${activeTab === 'password-resets' ? 'active' : ''}`}
               onClick={() => handleTabClick('password-resets')}
             >
-              <span className="participant-navbar-icon">🔑</span>
+              <span className="participant-navbar-icon"></span>
               Password Reset Requests
             </button>
           </li>
@@ -90,7 +90,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ activeTab = 'dashboard', onTa
               className={`participant-navbar-link ${activeTab === 'security' ? 'active' : ''}`}
               onClick={() => handleTabClick('security')}
             >
-              <span className="participant-navbar-icon">🔒</span>
+              <span className="participant-navbar-icon"></span>
               Security & Bot Protection
             </button>
           </li>
@@ -103,7 +103,7 @@ const AdminNavbar: React.FC<AdminNavbarProps> = ({ activeTab = 'dashboard', onTa
                 handleLogout();
               }}
             >
-              <span className="participant-navbar-icon">🚪</span>
+              <span className="participant-navbar-icon"></span>
               Logout
             </button>
           </li>

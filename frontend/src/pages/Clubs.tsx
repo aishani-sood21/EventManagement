@@ -78,7 +78,7 @@ export default function Clubs() {
       <div className="clubs-content">
         <div className="clubs-header">
           <h1 className="clubs-title">
-            <span>🏛️</span>
+            <span></span>
             <span>Clubs & Organizers</span>
           </h1>
         </div>
@@ -104,7 +104,7 @@ export default function Clubs() {
           <div className="search-filter-container">
             <input
               type="text"
-              placeholder="🔍 Search clubs by name or description..."
+              placeholder="Search clubs by name or description..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="search-input"
@@ -124,7 +124,7 @@ export default function Clubs() {
         {/* Clubs Grid */}
         {filteredOrganizers.length === 0 ? (
           <div className="empty-state">
-            <div className="empty-icon">🔍</div>
+            <div className="empty-icon"></div>
             <h3 className="empty-title">No Clubs Found</h3>
             <p className="empty-message">
               {searchQuery || categoryFilter !== 'All' 

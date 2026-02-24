@@ -124,7 +124,7 @@ export default function SecurityDashboard() {
   return (
     <div className="security-dashboard">
       <div className="security-header">
-        <h2>🔒 Security & Bot Protection Dashboard</h2>
+        <h2>Security & Bot Protection Dashboard</h2>
         <p>Monitor suspicious activity, blocked IPs, and security events</p>
       </div>
 
@@ -134,19 +134,19 @@ export default function SecurityDashboard() {
           className={`security-tab ${activeTab === 'stats' ? 'active' : ''}`}
           onClick={() => setActiveTab('stats')}
         >
-          📊 Statistics
+          Statistics
         </button>
         <button
           className={`security-tab ${activeTab === 'logs' ? 'active' : ''}`}
           onClick={() => setActiveTab('logs')}
         >
-          📋 Security Logs
+          Security Logs
         </button>
         <button
           className={`security-tab ${activeTab === 'blocked' ? 'active' : ''}`}
           onClick={() => setActiveTab('blocked')}
         >
-          🚫 Blocked IPs
+          Blocked IPs
         </button>
       </div>
 
@@ -154,37 +154,37 @@ export default function SecurityDashboard() {
       {activeTab === 'stats' && stats && (
         <div className="security-stats">
           <div className="stat-card">
-            <div className="stat-icon">🚫</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.totalBlocked}</div>
             <div className="stat-label">Total Blocked IPs</div>
           </div>
           
           <div className="stat-card danger">
-            <div className="stat-icon">❌</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.failedLoginsLast24h}</div>
             <div className="stat-label">Failed Logins (24h)</div>
           </div>
           
           <div className="stat-card">
-            <div className="stat-icon">📅</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.failedLoginsLast7d}</div>
             <div className="stat-label">Failed Logins (7d)</div>
           </div>
           
           <div className="stat-card success">
-            <div className="stat-icon">✅</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.successfulLoginsLast24h}</div>
             <div className="stat-label">Successful Logins (24h)</div>
           </div>
           
           <div className="stat-card success">
-            <div className="stat-icon">📝</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.registrationsLast24h}</div>
             <div className="stat-label">Registrations (24h)</div>
           </div>
           
           <div className="stat-card warning">
-            <div className="stat-icon">🛡️</div>
+            <div className="stat-icon"></div>
             <div className="stat-value">{stats.blockedAttemptsLast24h}</div>
             <div className="stat-label">Blocked Attempts (24h)</div>
           </div>

@@ -217,7 +217,7 @@ export default function EventEdit() {
       <div className="event-edit-header">
         <div className="event-edit-header-content">
           <div className="event-edit-title-section">
-            <h1>✏️ Edit Event</h1>
+            <h1>Edit Event</h1>
             <p className="event-edit-status">
               Status: 
               <span className={`event-edit-status-badge status-${event?.status?.toLowerCase()}`}>
@@ -225,7 +225,7 @@ export default function EventEdit() {
               </span>
               {hasRegistrations && (
                 <span className="event-edit-has-registrations">
-                  ⚠️ Has Registrations
+                  Has Registrations
                 </span>
               )}
             </p>
@@ -248,34 +248,34 @@ export default function EventEdit() {
             'banner-info'
           }`}>
             <h3 className="event-edit-rules-title">
-              📋 Editing Rules
+              Editing Rules
             </h3>
             {isDraft && (
               <p className="event-edit-rules-text">
-                ✅ Full editing allowed. You can modify all fields and publish when ready.
+                Full editing allowed. You can modify all fields and publish when ready.
               </p>
             )}
             {isPublished && !hasRegistrations && (
               <div className="event-edit-rules-text">
-                <p>⚠️ <strong>Published Event:</strong> Limited editing available.</p>
+                <p><strong>Published Event:</strong> Limited editing available.</p>
                 <ul className="event-edit-rules-list">
-                  <li>✓ Can update: Description, Registration Deadline, Registration Limit, Close Registrations</li>
-                  <li>✗ Cannot modify: Event Type, Eligibility, Event Dates, Registration Fee</li>
+                  <li>Can update: Description, Registration Deadline, Registration Limit, Close Registrations</li>
+                  <li>Cannot modify: Event Type, Eligibility, Event Dates, Registration Fee</li>
                 </ul>
               </div>
             )}
             {hasRegistrations && (
               <div className="event-edit-rules-text">
-                <p>🔒 <strong>Has Registrations:</strong> Most fields are locked.</p>
+                <p><strong>Has Registrations:</strong> Most fields are locked.</p>
                 <ul className="event-edit-rules-list">
-                  <li>🔒 Type, Eligibility, and <strong>Custom Form</strong> are <strong>permanently locked</strong></li>
-                  <li>✓ Can still update: Description, Extend Deadline, Increase Limit, Close Registrations</li>
+                  <li>Type, Eligibility, and <strong>Custom Form</strong> are <strong>permanently locked</strong></li>
+                  <li>Can still update: Description, Extend Deadline, Increase Limit, Close Registrations</li>
                 </ul>
               </div>
             )}
             {isOngoingOrCompleted && (
               <div className="event-edit-rules-text">
-                <p>🔒 <strong>Event is {event?.status}:</strong> Only status updates and closing registrations allowed.</p>
+                <p><strong>Event is {event?.status}:</strong> Only status updates and closing registrations allowed.</p>
               </div>
             )}
           </div>
@@ -283,7 +283,7 @@ export default function EventEdit() {
 
         {/* Basic Info */}
         <div className="event-edit-section">
-          <h2 className="event-edit-section-title">📝 Basic Information</h2>
+          <h2 className="event-edit-section-title">Basic Information</h2>
           
           <div className="event-edit-form-grid">
             <div className="event-edit-form-group full-width">
@@ -297,7 +297,7 @@ export default function EventEdit() {
                 placeholder="Enter event name"
               />
               {isFieldLocked('name') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -326,7 +326,7 @@ export default function EventEdit() {
                 <option value="Team">Team</option>
               </select>
               {isFieldLocked('type') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -343,7 +343,7 @@ export default function EventEdit() {
                 <option value="Non-IIIT Only">Non-IIIT Only</option>
               </select>
               {isFieldLocked('eligibility') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -380,7 +380,7 @@ export default function EventEdit() {
                 className="event-edit-input"
               />
               {isFieldLocked('startDate') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -394,7 +394,7 @@ export default function EventEdit() {
                 className="event-edit-input"
               />
               {isFieldLocked('endDate') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -409,7 +409,7 @@ export default function EventEdit() {
                 placeholder="0"
               />
               {isFieldLocked('registrationFee') && (
-                <p className="event-edit-locked-hint">🔒 Locked after registrations</p>
+                <p className="event-edit-locked-hint">Locked after registrations</p>
               )}
             </div>
 
@@ -459,20 +459,20 @@ export default function EventEdit() {
         {type === 'Normal' && (
           <div className="event-edit-section">
             <div className="event-edit-section-header">
-              <h2 className="event-edit-section-title">📝 Custom Registration Form</h2>
+              <h2 className="event-edit-section-title">Custom Registration Form</h2>
               {!customFormLocked && (
                 <button
                   onClick={() => setShowFormBuilder(!showFormBuilder)}
                   className="event-edit-toggle-btn"
                 >
-                  {showFormBuilder ? '▼ Hide Builder' : '▶ Show Builder'}
+                  {showFormBuilder ? 'Hide Builder' : 'Show Builder'}
                 </button>
               )}
             </div>
 
             {customFormLocked ? (
               <div className="event-edit-locked-message">
-                <div className="event-edit-locked-icon">🔒</div>
+                <div className="event-edit-locked-icon"></div>
                 <div className="event-edit-locked-content">
                   <h3 className="event-edit-locked-title">Custom Form is Locked</h3>
                   <p className="event-edit-locked-text">
