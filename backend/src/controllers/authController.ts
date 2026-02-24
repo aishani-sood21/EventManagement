@@ -38,9 +38,10 @@ export const registerParticipant = async (req: Request, res: Response): Promise<
 
         // 3. IIIT Validation
         if (type === 'IIIT') {
-            if (!email.endsWith('@iiit.ac.in')) {
+            const allowedDomains = ['@iiit.ac.in', '@students.iiit.ac.in', '@research.iiit.ac.in'];
+            if (!allowedDomains.some(domain => email.endsWith(domain))) {
                 await trackRegistration(ipAddress, email, false, userAgent);
-                return res.status(400).json({ message: 'IIIT students must use @iiit.ac.in email' });
+                return res.status(400).json({ message: 'IIIT students must use an @iiit.ac.in, @students.iiit.ac.in, or @research.iiit.ac.in email' });
             }
             if (!rollNumber) {
                 await trackRegistration(ipAddress, email, false, userAgent);
