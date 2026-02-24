@@ -42,7 +42,7 @@ const ParticipantNavbar: React.FC = () => {
               className={`participant-navbar-link ${isActive('/dashboard') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="participant-navbar-icon">🏠</span>
+              <span className="participant-navbar-icon"></span>
               Dashboard
             </Link>
           </li>
@@ -75,7 +75,7 @@ const ParticipantNavbar: React.FC = () => {
               className={`participant-navbar-link ${isActive('/clubs') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="participant-navbar-icon">🏢</span>
+              <span className="participant-navbar-icon"></span>
               Clubs & Organizers
             </Link>
           </li>
@@ -86,7 +86,7 @@ const ParticipantNavbar: React.FC = () => {
               className={`participant-navbar-link ${isActive('/profile') ? 'active' : ''}`}
               onClick={() => setMenuOpen(false)}
             >
-              <span className="participant-navbar-icon">👤</span>
+              <span className="participant-navbar-icon"></span>
               Profile
             </Link>
           </li>
@@ -99,7 +99,7 @@ const ParticipantNavbar: React.FC = () => {
                 handleLogout();
               }}
             >
-              <span className="participant-navbar-icon">🚪</span>
+              <span className="participant-navbar-icon"></span>
               Logout
             </button>
           </li>

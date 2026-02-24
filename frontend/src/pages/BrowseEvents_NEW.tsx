@@ -108,7 +108,7 @@ export default function BrowseEvents() {
       <div className="browse-events-content">
         <div className="browse-events-header">
           <h1 className="browse-events-title">
-            <span>🎫</span>
+            <span></span>
             <span>Browse Events</span>
           </h1>
         </div>
@@ -162,7 +162,7 @@ export default function BrowseEvents() {
         {/* Filters Section */}
         <div className="filters-section">
           <h3 className="filters-header">
-            <span>🎯</span>
+            <span></span>
             <span>Filters</span>
           </h3>
           
@@ -243,12 +243,12 @@ export default function BrowseEvents() {
         {/* Events Grid */}
         {loading ? (
           <div className="loading-state">
-            <div className="loading-icon">⏳</div>
+            <div className="loading-icon"></div>
             <p className="loading-text">Loading events...</p>
           </div>
         ) : events.length === 0 ? (
           <div className="empty-state">
-            <div className="empty-icon">🔍</div>
+            <div className="empty-icon"></div>
             <h3 className="empty-title">No Events Found</h3>
             <p className="empty-message">Try adjusting your filters or search query</p>
           </div>

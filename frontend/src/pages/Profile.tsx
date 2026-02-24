@@ -196,7 +196,7 @@ export default function Profile() {
       <div className="profile-content">
         <div className="profile-header">
           <h1 className="profile-title">
-            <span>👤</span>
+            <span></span>
             My Profile
           </h1>
         </div>
@@ -211,7 +211,7 @@ export default function Profile() {
         <div className="profile-section">
           <div className="section-header">
             <h2 className="section-title">
-              <span>📋</span>
+              <span></span>
               Account Information
             </h2>
             {!isEditingProfile && (
@@ -219,7 +219,7 @@ export default function Profile() {
                 onClick={() => setIsEditingProfile(true)}
                 className="edit-profile-button"
               >
-                <span>✏️</span>
+                <span></span>
                 Edit Profile
               </button>
             )}
@@ -263,7 +263,7 @@ export default function Profile() {
                   disabled={loading}
                   className="button-primary"
                 >
-                  {loading ? 'Saving...' : '💾 Save Changes'}
+                  {loading ? 'Saving...' : 'Save Changes'}
                 </button>
                 <button
                   onClick={() => {
@@ -311,7 +311,7 @@ export default function Profile() {
           <div className="profile-section">
             <div className="section-header">
               <h2 className="section-title">
-                <span>🏢</span>
+                <span></span>
                 Organizer Information
               </h2>
               {!isEditingOrgProfile && (
@@ -319,7 +319,7 @@ export default function Profile() {
                   onClick={() => setIsEditingOrgProfile(true)}
                   className="edit-profile-button"
                 >
-                  <span>✏️</span>
+                  <span></span>
                   Edit Profile
                 </button>
               )}
@@ -386,7 +386,7 @@ export default function Profile() {
                     disabled={loading}
                     className="button-primary"
                   >
-                    {loading ? 'Saving...' : '💾 Save Changes'}
+                    {loading ? 'Saving...' : 'Save Changes'}
                   </button>
                   <button
                     onClick={() => {
@@ -446,7 +446,7 @@ export default function Profile() {
         <div className="profile-section">
           <div className="section-header">
             <h2 className="section-title">
-              <span>🔒</span>
+              <span></span>
               Security Settings
             </h2>
           </div>
@@ -455,7 +455,7 @@ export default function Profile() {
               onClick={() => setShowPasswordChange(true)}
               className="button-secondary"
             >
-              🔑 Change Password
+              Change Password
             </button>
           ) : (
             <>
@@ -495,7 +495,7 @@ export default function Profile() {
                   disabled={loading}
                   className="button-danger"
                 >
-                  {loading ? 'Changing...' : '🔐 Change Password'}
+                  {loading ? 'Changing...' : ' Change Password'}
                 </button>
                 <button
                   onClick={() => {
@@ -518,7 +518,7 @@ export default function Profile() {
             {/* Interests with Checkboxes */}
             <div className="profile-section">
               <h2 className="section-title">
-                <span>📚</span>
+                <span></span>
                 Areas of Interest
               </h2>
               <p className="section-subtitle">
@@ -601,7 +601,7 @@ export default function Profile() {
                 disabled={loading}
                 className="button-success"
               >
-                {loading ? '⏳ Saving...' : '💾 Save Preferences'}
+                {loading ? '⏳ Saving...' : 'Save Preferences'}
               </button>
             </div>
           </>

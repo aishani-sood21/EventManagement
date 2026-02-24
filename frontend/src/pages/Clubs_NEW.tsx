@@ -78,7 +78,7 @@ export default function Clubs() {
       <div className="clubs-content">
         <div className="clubs-header">
           <h1 className="clubs-title">
-            <span>🏛️</span>
+            <span></span>
             <span>Clubs & Organizers</span>
           </h1>
         </div>

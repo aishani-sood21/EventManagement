@@ -275,7 +275,7 @@ export default function ParticipantEvents() {
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
             <div>
               <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <span style={{ fontSize: '3rem' }}>🎫</span>
+                <span style={{ fontSize: '3rem' }}></span>
                 My Events
               </h1>
               <p style={{ fontSize: '1.125rem', color: 'rgba(255, 255, 255, 0.9)' }}>Manage your registrations and track your journey</p>
@@ -295,7 +295,7 @@ export default function ParticipantEvents() {
                 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', marginTop: '0.5rem' }}>{stats.total}</p>
                 <p style={{ fontSize: '0.75rem', marginTop: '0.25rem' }}>All registrations</p>
               </div>
-              <div style={{ fontSize: '3.75rem', opacity: 0.3 }}>📊</div>
+              <div style={{ fontSize: '3.75rem', opacity: 0.3 }}></div>
             </div>
           </div>
           <div style={{ ...styles.statsCard, background: 'linear-gradient(135deg, #10b981, #059669)' }} onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.02)')} onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
@@ -305,7 +305,7 @@ export default function ParticipantEvents() {
                 <p style={{ fontSize: '2.5rem', fontWeight: 'bold', marginTop: '0.5rem' }}>{stats.upcoming}</p>
                 <p style={{ fontSize: '0.75rem', marginTop: '0.25rem' }}>Events ahead</p>
               </div>
-              <div style={{ fontSize: '3.75rem', opacity: 0.3 }}>📅</div>
+              <div style={{ fontSize: '3.75rem', opacity: 0.3 }}></div>
             </div>
           </div>
           <div style={{ ...styles.statsCard, background: 'linear-gradient(135deg, #a855f7, #ec4899)' }} onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.02)')} onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}>
@@ -359,7 +359,7 @@ export default function ParticipantEvents() {
         {/* Event Cards */}
         {filteredRegistrations.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '4rem 2rem', background: 'white', borderRadius: '1.5rem', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', border: '1px solid #f3f4f6' }}>
-            <div style={{ fontSize: '6rem', marginBottom: '1.5rem' }}>🎫</div>
+            <div style={{ fontSize: '6rem', marginBottom: '1.5rem' }}></div>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#1f2937', marginBottom: '0.75rem' }}>No events in this category</h3>
             <p style={{ color: '#9ca3af', fontSize: '1.125rem', marginBottom: '1.5rem' }}>Looks like you haven't registered for any events yet</p>
             {activeTab === 'upcoming' && registrations.length === 0 && (
@@ -396,7 +396,7 @@ export default function ParticipantEvents() {
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
                       <div style={styles.infoCard('linear-gradient(to bottom right, #dbeafe, #e0e7ff)')}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                          <span style={{ fontSize: '2rem' }}>🏢</span>
+                          <span style={{ fontSize: '2rem' }}></span>
                           <div>
                             <p style={{ fontSize: '0.75rem', color: '#3b82f6', fontWeight: '700', textTransform: 'uppercase' }}>Organizer</p>
                             <p style={{ fontWeight: 'bold', color: '#1f2937', fontSize: '0.875rem' }}>{reg.eventId?.organizerId?.profile?.organizerName || 'N/A'}</p>
@@ -405,7 +405,7 @@ export default function ParticipantEvents() {
                       </div>
                       <div style={styles.infoCard('linear-gradient(to bottom right, #f3e8ff, #fce7f3)')}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                          <span style={{ fontSize: '2rem' }}>📅</span>
+                          <span style={{ fontSize: '2rem' }}></span>
                           <div>
                             <p style={{ fontSize: '0.75rem', color: '#a855f7', fontWeight: '700', textTransform: 'uppercase' }}>Event Date</p>
                             <p style={{ fontWeight: 'bold', color: '#1f2937', fontSize: '0.875rem' }}>{new Date(reg.eventId?.startDate).toLocaleDateString('en-US', { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' })}</p>
@@ -415,7 +415,7 @@ export default function ParticipantEvents() {
                       {isUpcoming && (
                         <div style={styles.infoCard('linear-gradient(to bottom right, #d1fae5, #a7f3d0)')}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                            <span style={{ fontSize: '2rem' }}>⏰</span>
+                            <span style={{ fontSize: '2rem' }}></span>
                             <div>
                               <p style={{ fontSize: '0.75rem', color: '#059669', fontWeight: '700', textTransform: 'uppercase' }}>Time Left</p>
                               <p style={{ fontWeight: 'bold', color: '#4f46e5', fontSize: '0.875rem' }}>{getTimeUntilEvent(reg.eventId?.startDate)}</p>
@@ -430,7 +430,7 @@ export default function ParticipantEvents() {
                       <div style={{ background: 'linear-gradient(to right, #e0e7ff, #f3e8ff, #fce7f3)', border: '4px solid #c7d2fe', borderRadius: '1rem', padding: '1.25rem', marginBottom: '1.5rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)' }}>
                         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                            <span style={{ fontSize: '3rem' }}>🎫</span>
+                            <span style={{ fontSize: '3rem' }}></span>
                             <div>
                               <p style={{ fontSize: '0.75rem', color: '#4f46e5', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Ticket ID</p>
                               <p style={{ fontSize: '1.5rem', fontFamily: 'monospace', fontWeight: 'bold', color: '#312e81', letterSpacing: '0.05em' }}>{reg.ticketId}</p>
@@ -461,12 +461,12 @@ export default function ParticipantEvents() {
                     {/* Action Buttons */}
                     <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                       <button onClick={() => navigate(`/events/${reg.eventId?._id}`)} style={{ ...styles.button('primary'), flex: 1 }}>
-                        <span>📄</span>
+                        <span></span>
                         <span>View Event</span>
                       </button>
                       {!(reg.eventId?.type === 'Merchandise' && (!reg.paymentStatus || reg.paymentStatus === 'Pending' || reg.paymentStatus === 'Rejected')) && (
                         <button onClick={() => viewTicket(reg.ticketId)} style={{ ...styles.button('secondary'), flex: 1 }}>
-                          <span>🎫</span>
+                          <span></span>
                           <span>View Ticket</span>
                         </button>
                       )}
@@ -491,7 +491,7 @@ export default function ParticipantEvents() {
           <div style={{ background: 'white', borderRadius: '1.5rem', boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25)', maxWidth: '56rem', width: '100%', maxHeight: '90vh', overflowY: 'auto' }}>
             {/* Modal Header */}
             <div style={{ background: 'linear-gradient(to right, #4f46e5, #a855f7, #ec4899)', color: 'white', padding: '2.5rem', textAlign: 'center', position: 'relative' }}>
-              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎫</div>
+              <div style={{ fontSize: '4rem', marginBottom: '1rem' }}></div>
               <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '0.75rem' }}>Event Ticket</h2>
               <p style={{ color: 'rgba(255, 255, 255, 0.9)', marginBottom: '1rem' }}>Your digital pass to an amazing experience</p>
               <div style={{ background: 'white', color: '#1f2937', display: 'inline-block', padding: '1rem 2rem', borderRadius: '1rem', marginTop: '0.5rem', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}>
@@ -541,7 +541,7 @@ export default function ParticipantEvents() {
             {/* Footer */}
             <div style={{ borderTop: '2px solid #f3f4f6', padding: '2rem', background: 'linear-gradient(to bottom right, #f9fafb, white)', display: 'flex', gap: '1rem' }}>
               <button onClick={() => alert('Download feature coming soon!')} style={{ ...styles.button('primary'), flex: 1 }}>
-                <span>📥</span>
+                <span></span>
                 <span>Download PDF</span>
               </button>
               <button onClick={() => setSelectedTicket(null)} style={{ ...styles.button('secondary'), flex: 1 }}>
